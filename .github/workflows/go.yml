@@ -32,11 +32,11 @@ jobs:
         # Username used to log in to a Docker registry. If not set then no login will occur
         username: danielvladco
         # Password or personal access token used to log in to a Docker registry. If not set then no login will occur
-        password: ae8f6802be7bdb6811d28c50eaf752f14a769c87
+        password: ${{ secrets.GITHUB_TOKEN }}
         # Server address of Docker registry. If not set then will default to Docker Hub
         registry: docker.pkg.github.com
         # Docker repository to tag the image with
-        repository: github-ci-cd-workflow
+        repository: ${{ github.repostitory }}
         # Comma-delimited list of tags. These will be added to the registry/repository to form the image's tags
         tag_with_ref: true
     - name: Deploy to staging env
