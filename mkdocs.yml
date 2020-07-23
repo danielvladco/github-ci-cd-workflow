@@ -1,2 +1,21 @@
+site_name: Test docs pages
+repo_url: https://github.com/danielvladco/github-ci-cd-workflow
 theme:
+  font:
+    text: Work Sans
+#   logo: assets/logo.png
   name: material
+  palette:
+    primary: teal
+# google_analytics:
+# - UA-105170809-3
+# - auto
+markdown_extensions:
+- codehilite
+- admonition
+- pymdownx.superfences
+- footnotes
+- toc:
+    permalink: true
+nav:
+- Overview: index.md
