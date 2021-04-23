@@ -1,8 +1,30 @@
 site_name: My Docs
 site_dir: .mkdocs
+repo_url: https://github.com/danielvladco/go-proto-gql
+google_analytics:
+  - UA-195302492-1
+  - auto
 theme:
   name: material
-#  custom_dir:
+  palette:
+    - scheme: slate
+      primary: purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - scheme: default
+      primary: purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+  features:
+    - navigation.instant
+    - navigation.top
+    - navigation.expand
+#    - navigation.sections
 
   # 404 page
   static_templates:
