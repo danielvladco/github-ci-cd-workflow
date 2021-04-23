@@ -38,6 +38,7 @@ jobs:
         # Docker repository to tag the image with
         repository: ${{ github.repostitory }}/test
         # Comma-delimited list of tags. These will be added to the registry/repository to form the image's tags
+        tag_with_sha: true
         tag_with_ref: true
     - name: Deploy to staging env
       run: "deploy to gke, eks, aws, gcp, azure etc..."
