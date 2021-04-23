@@ -1,7 +1,8 @@
 site_name: My Docs
+site_dir: .mkdocs
 theme:
-  name: null
-  custom_dir: mkdocs-material/material
+  name: material
+#  custom_dir:
 
   # 404 page
   static_templates:
